@@ -1,0 +1,95 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  background-image: url("https://c.pxhere.com/images/af/14/51d3ecdb823b21ce9721c3e60281-1434343.jpg!d");
+  background-color: lavender;
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: monospace;
+}
+
+.menu-bar
+{
+  background-color: #8BA36B;
+  text-align: center;
+}
+
+.menu-bar ul
+{
+  display: flex;
+  list-style: none;
+  color: white;
+}
+
+.menu-bar ul li
+{
+  width: 80px;
+  padding: 15px;
+}
+
+.menu-bar li a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.on, .menu-bar ul li:hover
+{
+  background: #A7BC8C;
+}
+
+.sub-menu-1
+{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+  display: block;
+  position: absolute;
+  background-color: #8BA36B;
+  background-color: rgba(139, 163, 107, .6);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:hover
+{
+  background-color: rgba(153, 172, 128, .85);
+}
+
+.sub-menu-2
+{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:hover .sub-menu-2
+{
+  display: block;
+  position: absolute;
+  background-color: #8BA36B;
+  background-color: rgba(139, 163, 107, .8);
+  margin-top: -30px;
+  margin-left: 95px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:hover .sub-menu-2 ul li
+{
+  width: 120px;
+}
+.sub-menu-2 ul li:hover
+{
+  background-color: rgba(126, 140, 107, .85);
+}

@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Day of the 42</title>
+    <link rel="stylesheet" type="text/css" href="doft.css" />
+  </head>
+  <body style="background-color: #505050">
+    <div id="mainBoxes">
+      <div id="header" style="grid-area: header">
+        <div id="topRect" class="frame">
+          <img src="resources/day_of_the_42.png" alt="logo" style="height: 135px" title="Day of the 42"/>
+          <a href="https://www.relaischateaux.com">
+            <img class="icon" src="resources/close.gif" alt="Disconnect" title="Disconnect" style="margin-top: 110px" />
+          </a>
+          <a href="https://www.disney.com">
+            <img class="icon" src="resources/reload.png" alt="Start from the beginning" title="Start from the beginning" style="margin-right: -28px"/>
+          </a>
+          <img class="glass" src="resources/loupe.png" alt="Magnifying Glass" title="Magnifying Glass" style="height: 165px; float: right"/>
+        </div>
+      </div>
+      <div id="navBar" style="grid-area: navBar; justify-self: end">
+        <div id="navRect" class="frame">
+          <div id="navButtons">
+            <img class="button" src="resources/arrow.png" alt="Advance" title="Advance"/>
+            <img class="button" src="resources/main.png" alt="Take" title="Take"/>
+            <img class="button eye" src="resources/oeil.png" alt="Look" title="Look" style="margin-left: 30px; margin-top:6px"/>
+            <img class="button" src="resources/outil.png" alt="Use" title="Use"/>
+            <img class="button" src="resources/chat-icon.png" alt="Speak" title="Speak"/>
+          </div>
+        </div>
+      </div>
+      <div id="items" style="grid-area: items; justify-self: start">
+        <div id="itemsRect" class="frame">
+          <div id="toolButtons">
+            <img class="button" src="resources/book.png" alt="Book" title="Book" style="height: 90px;"/>
+            <img class="button" src="resources/towel.png" alt="Towel" title="Towel" style="height: 55px"/>
+            <div id="brick" class="button" title="Brick" alt="Brick"> </div>
+          </div>
+        </div>
+      </div>
+      <div id="mainScreen" style="grid-area: mainScreen">
+        <div id="mainRect" class="frame" style="display:table-cell; vertical-align:middle; text-align:center">
+          <img src="resources/cluster.jpg" alt="Cluster" title="Cluster" usemap="#imgmap" style="height: 562px;"/>
+          <map name="imgmap">
+            <area shape="rect" coords="323, 324, 400, 447" alt="Chair" title="Chair" href="https://www.ikea.com" />
+            <area shape="rect" coords="789, 312, 974, 440" alt="Screen" title="Screen" href="https://www.apple.com" />
+          </map>
+        </div>
+      </div>
+      <div id="ResponceBox">
+        <div id="greenBox" class="frame" style="padding: 10px">
+          <div id="text" style="font-size: 20px" title="A message for you">
+          Vous <span style="font-family: Times; font-size: 31px"> entrez</span><span> alors dans une grande piece remplie d'</span><span style="text-shadow: 3px 2px 3px red;">ordinateurs</span><span>...</span>
+          <br />
+          <i style="font-size: 18px">- Bonjour, vous êtes nouveau ici ?</i>
+          <br />
+          <input type=”text” size="60" style="margin-right:3px" title="Write a reponse"/>
+          <input type="submit" value="Respondre" title="Respond" >
+          <br/>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>

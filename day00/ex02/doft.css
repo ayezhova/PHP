@@ -1,0 +1,101 @@
+#mainBoxes
+{
+  display: grid;
+  /*grid-column-gap: 23px; */
+  grid-template-columns:  auto auto auto auto auto;
+  justify-content: center;
+  grid-template-areas:
+  "header header header"
+  "navBar mainScreen items";
+}
+
+#topRect
+{
+  width: 1423px;
+  height: 138px;
+  background-color: #909090;
+}
+
+#navRect
+{
+  width: 137px;
+  height: 427px;
+  background-color: #909090;
+  margin-right: 28px;
+}
+
+.button
+{
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 33px;
+}
+
+#mainRect
+{
+  width: 1010px;
+  height: 582px;
+  background-color: #909090;
+  min-width: 200px;
+}
+
+#itemsRect
+{
+  width: 137px;
+  height: 427px;
+  background-color: #909090;
+  border-radius: 15px;
+}
+
+#greenBox
+{
+  width: 518px;
+  height: 170px;
+  background-color: #88FF89;
+  border-color: #88FF89;
+  font-family: arial;
+}
+
+#ResponceBox
+{
+  position: absolute;
+  visibility: visible;
+  margin-left: 200px;
+  margin-top: 690px;
+  z-index: 200;
+}
+
+#brick
+{
+  height: 70px;
+  width: 120px;
+  margin-left: 8px;
+  background-image: url("resources/brick.jpg");
+  background-repeat: repeat
+
+}
+
+.icon
+{
+  width: 22px;
+  height: 22px;
+  float: right;
+  margin: 8px;
+}
+
+.frame
+{
+  border-color: #909090;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px;
+}
+
+.eye
+{
+  border-color: red;
+  border-width: 6px;
+  border-style: solid;
+  border-radius: 5px;
+}
