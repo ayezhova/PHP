@@ -3,6 +3,7 @@ Selected exercises from 42 Silicon Valley's PHP Piscene.
 
 Certain exercises's include explanations.
 From Day 01:
+
 ex03: ft_split.php
 ex05: epur_str.php
 ex06: ssap.php
