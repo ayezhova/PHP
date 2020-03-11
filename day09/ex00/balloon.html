@@ -1,0 +1,58 @@
+<style>
+
+#baloon
+{
+  height:200px;
+  width:200px;
+  background-color:red;
+  border-radius:50%;
+  margin:100px;
+}
+
+</style>
+
+<html>
+    <head>
+      <title>Blow Me</title>
+    </head>
+    <body>
+      <div id="baloon"></div>
+      <script>
+        var balloon = document.getElementById("baloon");
+        balloon.onclick = function() {colorChange()};
+        balloon.onmouseleave = function() {Mouse()};
+        var size = 200;
+        var num = 0;
+        function colorChange()
+        {
+          var colorArray = new Array("red", "green", "blue");
+          num++;
+          if (num === 3)
+            num = 0;
+          size += 10;
+          if (size > 420)
+          {
+            alert('POP');
+            size = 200;
+          }
+          balloon.style.backgroundColor = colorArray[num % 3];
+          balloon.style.height = size;
+          balloon.style.width = size;
+        }
+        function Mouse()
+        {
+          var colorArray = new Array("red", "green", "blue");
+          num--;
+          if (num === -1)
+            num = 2;
+          if (size >= 205)
+          {
+            size -= 5;
+          }
+          balloon.style.backgroundColor = colorArray[num % 3];
+          balloon.style.height = size;
+          balloon.style.width = size;
+        }
+      </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<- Vector  ----------------------------------------------------------------------
+The Vertex class handles the vector  properties of its origin and destination location in space (in x, y, z coordinates), and the Vertex's homogenous coordinate (w).
+
+An instance can be contructed from providing the vector's destination.
+new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 1.0 ) );
+
+$vtxX = new Vertex( array( 'x' => 0.0, 'y' => 1.0, 'z' => 0.0 ) );
+$vtcXunit = new Vector( array( 'dest' => $vtxX ) );
+
+Optionally, the user can include the origin. If not specified, the default will be set as a x=0, y=0, z=0, w=1 vector.
+$vtxO = new Vertex( array( 'x' => 0.0, 'y' => 0.0, 'z' => 0.0 ) );
+$vtxX = new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0 ) );
+$vtcXunit = new Vector( array( 'orig' => $vtxO, 'dest' => $vtxX ) );
+
+Unless otherwise specified, 'w' will be set to 0.0 as a default.
+
+All descriptors of the vector as set as private within the class.
+
+The variable $verbose can be set to True for additional information when constructing, printing or destroying an instance of the Vertex class.
+
+To get one of the variables saved variables in the destination, the vector class has getP() functions, where P can be replaced with 'X', 'Y', 'Z', or 'W'.
+
+Example:
+$instance->getX();
+
+Additional functions:
+
+float magnitude() : returns the vector’s length (or "norm").
+Vector normalize() : returns a normalized version of the vector. If the vector is
+already normalized, returns a fresh copy of the vector.
+Vector add( Vector $rhs ) : returns the sum vector of both vectors.
+Vector sub( Vector $rhs ) : returns the difference vector of both vectors.
+Vector opposite() : returns the opposite vector.
+Vector scalarProduct( $k ) : returns the multiplication of the vector with a
+scalar.
+float dotProduct( Vector $rhs ) : returns the scalar multiplication of both vectors.
+float cos( Vector $rhs ) : returns the angle’sAppendix cosine between both vectors.
+Vector crossProduct( Vector $rhs ) : returns the cross multiplication of both
+vectors (right-hand mark!)
+
+---------------------------------------------------------------------- vector ->

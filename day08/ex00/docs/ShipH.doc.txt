@@ -1,0 +1,14 @@
+<---------------------------------------------- Ship H
+
+A class extending Spaceship that shoots horizontally. Other than 
+Spaceship requirements, additionally expects bullet_size.
+
+Private function:
+set_bullet_size: to set the size of the horizontal bullet.
+
+Public function:
+get_bullet_size() - provides read-only access to bullet size.
+shoot() - shoot the bullet.
+__toString() - returns a string explaining ship.
+
+Ship H ---------------------------------------------->

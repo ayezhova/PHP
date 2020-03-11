@@ -1,0 +1,11 @@
+<------------------------------------------------- Rock
+
+The Rock class implements the IObstacle interface. Its variables, size, 
+damage, and img_url, are in read-only mode.
+
+Read-Only Functions:
+get_size(): returns the size;
+get_url(): returns the image url;
+get_damage(): returns the damage
+
+Rock ------------------------------------------------->

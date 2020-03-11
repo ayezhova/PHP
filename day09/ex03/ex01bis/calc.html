@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Use me~</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <form id="form">
+      <input id="in1" type="text" value="Input 1">
+      <select id="signs">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+      </select>
+      <input id="in2" type="text" value="Input 2">
+      <input id="submit" type="submit" value="Try me!">
+    </form>
+    <script>
+      var form = $('form');
+      var in1_text = $('#in1');
+      var in2_text = $('#in2');
+      var insign_text = $("#signs");
+      
+      
+      $(document).ready(function()
+      {
+        form.submit(calculate);
+        setInterval("alert('Please, use me...')", 30000);
+      });
+
+      function calculate(event) {
+        var in1 = in1_text.val();
+        var in2 = in2_text.val();
+        var insign = insign_text.val();
+        
+        if (!$.isNumeric(in1) || !$.isNumeric(in2) || in1 < 0 || in2 < 0)
+        {
+          console.log("Error :(");
+          alert("Error :(");
+        }
+        else if ((insign == "/" || insign == "%") && in2 == 0)
+        {
+          console.log("It’s over 9000!");
+          alert("It’s over 9000!");
+        }
+        else
+        {
+          if (insign == "+")
+          {
+            var x = +in1 + +in2;
+            console.log(x);
+            alert(x);
+          }
+          else if (insign == "-")
+          {
+            var x = in1 - in2;
+            console.log(x);
+            alert(x);
+          }
+          else if (insign == "*")
+          {
+            var x = in1 * in2;
+            console.log(x);
+            alert(x);
+          }
+          else if (insign == "/")
+          {
+            var x = in1 / in2;
+            console.log(x);
+            alert(x);
+          }
+          else if (insign == "%")
+          {
+            var x = in1 % in2;
+            console.log(x);
+            alert(x);
+          }
+        }
+      }
+      
+    </script>
+  </body>
+</html>

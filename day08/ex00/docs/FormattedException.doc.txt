@@ -1,0 +1,11 @@
+<----------------------------------- FormattedException
+
+A class that extends the Exception class that provides a custom error
+message in a way that is easier to read for coders.
+
+The construct class gets the message, error code and previous message.
+
+The Custom Message class prints the custom error message using the
+error message and error code.
+
+FormattedException ----------------------------------->

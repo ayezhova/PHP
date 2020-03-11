@@ -1,0 +1,1 @@
+select COUNT(*) as nb_susc, FLOOR(AVG(price)), SUM(duration_sub) % 42 as ft from subscription

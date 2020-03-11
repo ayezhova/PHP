@@ -1,0 +1,21 @@
+<------------------------------------------ Spaceship
+
+An abstract that defines the base minimum for the game's spaceships.
+The Spaceship is awaiting an array with name, x-position, y-position
+and img_url.
+
+All ships will need their position and name as public variables which
+can be changed and easily accessed. Ships also have img_url and bullet_size
+as private variables which are shared by the abstract class and by themselves
+and which are read-only. They have a private error variable which is used only
+by the abstract class.
+
+Public functions:
+get_img() -> Read-only the url of the image of this ship.
+
+Required functions for all children:
+shoot(); -> extended classes will have their own methods of shooting.
+__toString() -> extended class will have their own methods returning a string
+
+
+Spaceship ------------------------------------------->

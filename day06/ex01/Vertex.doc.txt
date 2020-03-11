@@ -1,0 +1,22 @@
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles the vertex properties of its location in space (x, y, z coordinates), the Vertex's homogenous coordinate (w), and it's color (of the Color class).
+
+An instance can be contructed from including only x, y and z values:
+new Vertex( array( 'x' => 1.0, 'y' => 1.0, 'z' => 1.0 ) );
+
+Or by including optional w or color values. 
+new Vertex( array ( 'x' => 1.0, 'y' => 1.0, 'z' => 1.0 , 'w' => 1.0, 'color' =>new Color( array( 'red' => 255, 'green' => 255, 'blue' => 255 ) );
+
+Unless otherwise specified, 'w' will be set to 1.0 as a default. 'color' will be set to Color( array( 'red' => 255, 'green' => 255, 'blue' => 255 ) as a default.
+
+All descriptors of the Vertex as set as private within the class.
+
+The variable $verbose can be set to True for additional information when constructing, printing or destroying an instance of the Vertex class.
+
+To get one of the variables, the Vertex class has getP() functions, where P can be replaced with 'X', 'Y', 'Z', 'W' or 'Color' to get the appropriate variables. To update one of the variables, the user can use the setP($arg) functions, where P can be replaced similarly, and $arg is the new value.
+
+Example:
+$instance->getX();
+
+$instance->setX(2.0);
+---------------------------------------------------------------------- Vertex ->

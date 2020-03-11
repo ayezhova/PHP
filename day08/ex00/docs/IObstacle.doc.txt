@@ -1,0 +1,11 @@
+<------------------------------------------- IObstacle
+
+An interface for obstacle objects. All obstacles will require the following
+functions:
+
+__toString();
+get_size();
+get_url();
+get_damage();
+
+IObstacle ------------------------------------------->

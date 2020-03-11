@@ -1,0 +1,56 @@
+<style>
+
+#baloon
+{
+  height:200px;
+  width:200px;
+  background-color:red;
+  border-radius:50%;
+  margin:100px;
+}
+
+</style>
+
+<html>
+    <head>
+      <title>Blow Me</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+      <div id="baloon"></div>
+      <script>
+        $(document).ready(function(){
+          var size = 200;
+          var num = 0;
+          $('#baloon').click(function colorChange(){
+            var colorArray = new Array("red", "green", "blue");
+            num++;
+            if (num === 3)
+              num = 0;
+            size += 10;
+            if (size > 420)
+            {
+              alert('POP');
+              size = 200;
+            }
+            $(this).css("background-color", colorArray[num % 3]);
+            $(this).css("height", size);
+            $(this).css("width", size);
+          })
+          $('#baloon').mouseleave(function colorChange(){
+            var colorArray = new Array("red", "green", "blue");
+            num--;
+            if (num === -1)
+              num = 2;
+            if (size >= 205)
+            {
+              size -= 5;
+            }
+            $(this).css("height", size);
+            $(this).css("width", size);
+            $(this).css("background-color", colorArray[(num) % 3]);
+          })
+        });
+      </script>
+    </body>
+</html>
